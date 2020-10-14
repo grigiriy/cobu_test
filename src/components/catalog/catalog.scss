@@ -5,9 +5,9 @@
     max-width: 100%;
     margin: 0 3rem;
   }
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     max-width: 100%;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     h1 {
       font-size: 1.2rem;
     }
@@ -15,12 +15,12 @@
   .row {
     display: flex;
     margin: 0 -1rem;
-    @media (max-width: 450px) {
+    @media (max-width: 550px) {
       margin: 0 -0.5rem;
     }
     > div {
       padding: 0 1rem;
-      @media (max-width: 450px) {
+      @media (max-width: 550px) {
         padding: 0 0.5rem;
       }
     }

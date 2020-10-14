@@ -5,9 +5,6 @@
 
   .col-left {
     width: 20%;
-    @media (max-width: 450px) {
-      width: 25%;
-    }
     .image-wrapper {
       position: relative;
       img {
@@ -17,21 +14,18 @@
   }
   .col-right {
     width: 75%;
-    @media (max-width: 450px) {
-      width: 70%;
-    }
     .content-wrapper {
       .card-header {
         margin: 0 0 1rem;
         display: flex;
         justify-content: space-between;
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
           margin: 0 0 0.5rem;
         }
         h2 {
           margin: 0 1rem 0 0;
         }
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
           .label-wrapper {
             display: none;
           }
@@ -44,31 +38,35 @@
       .card-subheader {
         display: flex;
         margin: 1rem 0;
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
           margin: 0.5rem 0;
         }
-        .order-id {
-          font-size: 0.8rem;
+        .id-wrapper {
           margin-left: auto;
-          color: rgb(0, 200, 175);
-          text-decoration: none;
-          border-bottom: solid 1px;
-          @media (max-width: 450px) {
-            height: 0.8rem;
-            align-self: center;
-            font-size: 0.6rem;
+          .order-id {
+            font-size: 0.8rem;
+            margin-left: auto;
+            color: rgb(0, 200, 175);
+            text-decoration: none;
+            border-bottom: solid 1px;
+            @media (max-width: 550px) {
+              height: 0.8rem;
+              align-self: center;
+              font-size: 0.6rem;
+            }
           }
         }
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
           flex-direction: column;
           .id-wrapper {
+            margin-left: 0;
             display: flex;
             margin-top: 0.5rem;
           }
         }
         .label-wrapper {
           display: none;
-          @media (max-width: 450px) {
+          @media (max-width: 550px) {
             display: block;
             margin-top: 0;
           }
@@ -76,18 +74,18 @@
       }
       .card-main {
         margin: 1rem 0;
-        @media (max-width: 450px) {
+        @media (max-width: 550px) {
           margin: 0.5rem 0;
         }
         .content {
           margin-bottom: 1rem;
           color: rgb(150, 200, 200);
           font-size: 0.8rem;
-          @media (max-width: 450px) {
+          @media (max-width: 550px) {
             font-size: 0.6rem;
           }
           p {
-            @media (max-width: 450px) {
+            @media (max-width: 550px) {
               text-overflow: ellipsis;
               white-space: nowrap;
               overflow: hidden;
@@ -107,7 +105,7 @@
         }
         .price-wrapper {
           display: flex;
-          @media (max-width: 450px) {
+          @media (max-width: 550px) {
             flex-direction: column;
           }
         }

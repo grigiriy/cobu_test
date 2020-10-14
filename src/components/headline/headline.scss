@@ -1,6 +1,6 @@
 .headline {
   display: flex;
-  max-width: 450px;
+  max-width: 550px;
   width: 100%;
   justify-content: space-between;
 }
@@ -13,14 +13,14 @@
   display: flex;
   span {
     border-bottom: solid 1px;
-    @media (max-width: 450px) {
+    @media (max-width: 550px) {
       font-size: 0.8rem;
     }
   }
   svg {
     height: 1.2rem;
     margin-left: 0.5rem;
-    @media (max-width: 450px) {
+    @media (max-width: 550px) {
       height: 1rem;
     }
   }

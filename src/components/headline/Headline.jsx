@@ -2,7 +2,7 @@ import React from 'react';
 
 import './headline.scss';
 
-import Arrow from '../icons/arrow.jsx';
+import Arrow from '../../icons/arrow.jsx';
 
 const Headline = () => {    
     return (

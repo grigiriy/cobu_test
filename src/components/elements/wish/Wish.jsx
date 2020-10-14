@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Heart from '../../icons/heart.jsx';
+import Heart from '../../../icons/heart.jsx';
 
 import './wish.scss';
 

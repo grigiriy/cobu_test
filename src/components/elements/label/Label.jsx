@@ -1,7 +1,16 @@
 import React from 'react';
+import classNames from 'classnames';
+
+import './label.scss';
+
 
 const Label = (props) => {
-return <div className="percent">{props.val}%</div>
+    let $classNames = classNames('label',props.val>60?'good':'medium')
+    return(
+    <div>
+        <span className={$classNames}>{props.val}%</span>
+    </div>
+    )
 }
 
 export default Label;

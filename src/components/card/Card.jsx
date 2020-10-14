@@ -32,8 +32,14 @@ const Card = (props) => {
                     </div>
                     <div className="card-main">
                         <p>{props.item.about}</p>
-                        <Price count={props.item.count} val={props.item.bet} />
-                        <PriceLabel val={props.item.bet} />
+                        <div className="atts">
+                            <div>Цвет: <span>{props.item.color}</span></div>
+                            <div>Размер: <span>{props.item.size}</span></div>
+                        </div>
+                        <div className="price-wrapper">
+                            <Price count={props.item.count} val={props.item.price} />
+                            <PriceLabel val={props.item.bet} />
+                        </div>
                     </div>
                     <div className="card-footer">
                         <Status status={props.item.status}/>

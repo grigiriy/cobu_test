@@ -15,21 +15,37 @@
   .col-right {
     width: 80%;
     .content-wrapper {
-      > div {
+      .card-header {
         display: flex;
-        &.card-header {
-          justify-content: space-between;
-          margin-bottom: 1rem;
-          h2 {
-            margin: 0;
-          }
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        h2 {
+          margin: 0;
         }
+      }
+      .card-subheader {
+        display: flex;
         .order-id {
           font-size: 0.8rem;
           margin-left: auto;
           color: rgb(0, 200, 175);
           text-decoration: none;
           border-bottom: solid 1px;
+        }
+      }
+      .card-main {
+        color: rgb(150, 200, 200);
+        font-size: 0.8rem;
+        p {
+          width: 100%;
+          margin-bottom: 0.2rem;
+        }
+        .atts {
+          display: flex;
+          span {
+            font-weight: 500;
+            margin-right: 1rem;
+          }
         }
       }
     }

@@ -28,7 +28,10 @@ const Card = (props) => {
                     </div>
                     <div className="card-subheader">
                         <Rating rating={props.item.rating} reviews={props.item.reviews} />
-                        <div className="order-id">№ заказа: {props.item.order_id}</div>
+                        <div class="id-wrapper">
+                            <Label val={props.item.percent} />
+                            <div className="order-id">№ заказа: {props.item.order_id}</div>
+                        </div>
                     </div>
                     <div className="card-main">
                         <div className="content">

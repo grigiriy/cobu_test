@@ -1,13 +1,13 @@
 import React from 'react';
 
+import './status.scss';
+
 const Label = (props) => {
 return(
-    <div className="status-bar">
+    <div className="status-wrapper">
         <p>{props.status.status}</p>
-        <p>
-            <span>{props.status.option[0]}</span>: <span>{props.status.option[1]}</span>
-            <span>Время до завершения:</span><span>{props.status.time_left}</span>
-        </p>
+            <div>{props.status.option[0]}:<span>{props.status.option[1]}</span></div>
+            <div>Время до завершения:<span>{props.status.time_left}</span></div>
     </div>
 )
 }

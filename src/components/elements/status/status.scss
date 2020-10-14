@@ -1,0 +1,17 @@
+.status-wrapper {
+  background: rgb(238, 243, 245);
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  p {
+    margin-top: 0;
+    font-weight: 500;
+  }
+  div {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    span {
+      font-weight: 500;
+      margin-left: 0.5rem;
+    }
+  }
+}

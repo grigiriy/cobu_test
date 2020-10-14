@@ -3,20 +3,20 @@ import React from 'react';
 import Data from '../../data/items.json'
 
 import Card from '../card'
+import Headline from '../headline'
+
+import './catalog.scss';
 
 const Catalog = () => {    
     return (
-    <>
     <div className="container">
-        <h1>Мои покупки</h1>
-        <span className="history">История покупок </span>
+        <Headline />
+        {
+            Data.map((item) => (
+            <Card key={item.order_id} item={item} />
+            ))
+        }
     </div>
-    {
-        Data.map((item) => (
-        <Card key={item.id} item={item} />
-        ))
-    }
-    </>
     )
 }
 

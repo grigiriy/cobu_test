@@ -10,12 +10,16 @@ import './catalog.scss';
 const Catalog = () => {    
     return (
     <div className="container">
-        <Headline />
+        <div className="row">
+            <Headline />
+        </div>
+        <div className="row">
         {
             Data.map((item) => (
-            <Card key={item.order_id} item={item} />
-            ))
-        }
+                <Card key={item.order_id} item={item} />
+                ))
+            }
+        </div>
     </div>
     )
 }

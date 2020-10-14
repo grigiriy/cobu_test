@@ -1,16 +1,20 @@
-.label {
-  width: 100%;
-  font-weight: 500;
-  border-radius: 2px;
-  padding: 2px 4px;
-  background-color: #ccc;
-  &.good {
-    background-color: rgb(216, 245, 250);
-    color: rgb(0, 200, 150);
+.label-wrapper {
+  align-self: center;
+  .label {
+    font-size: 0.8rem;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 2px;
+    padding: 2px 4px;
+    background-color: #ccc;
+    &.good {
+      background-color: rgb(216, 245, 250);
+      color: rgb(0, 200, 150);
+    }
+    &.medium {
+      background-color: rgb(222, 243, 255);
+      color: rgb(0, 160, 255);
+    }
+    max-width: 100%;
   }
-  &.medium {
-    background-color: rgb(222, 243, 255);
-    color: rgb(0, 160, 255);
-  }
-  max-width: 100%;
 }

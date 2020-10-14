@@ -1,0 +1,17 @@
+.rating {
+  font-size: 0.8rem;
+  display: flex;
+  line-height: 1.2rem;
+  svg {
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 0.1rem;
+    span {
+      border-bottom: dashed 1px;
+    }
+  }
+}

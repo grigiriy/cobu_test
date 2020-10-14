@@ -31,6 +31,7 @@ const Card = (props) => {
                         <div className="order-id">№ заказа: {props.item.order_id}</div>
                     </div>
                     <div className="card-main">
+                        <p>{props.item.about}</p>
                         <Price count={props.item.count} val={props.item.bet} />
                         <PriceLabel val={props.item.bet} />
                     </div>

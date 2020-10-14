@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = () => {
+const Card = (props) => {
 return (
 
 <div className="card">
@@ -13,26 +13,26 @@ return (
     <div className="col-right">
         <div className="content-wrapper">
             <div className="d-flex card-header">
-                <h2>Наручные часы CASIO GA-100C-8A</h2>
-                <div className="percent">99%</div>
+                <h2>{props.item.name}</h2>
+                <div className="percent">{props.item.percent}</div>
             </div>
             <div className="d-flex card-subheader">
                 <div className="ration">
                     <span>el</span>
-                    <span>4.7</span>
-                    <span>(18)</span>
+                    <span>{props.item.rating}</span>
+                    <span>({props.item.reviews})</span>
                 </div>
-                <div className="order-id">№ заказа: 3-123-44-52</div>
+                <div className="order-id">№ заказа: {props.item.order_id}</div>
             </div>
             <div className="d-flex card-main">
                 <div className="price"></div>
                 <div className="price"></div>
             </div>
             <div className="d-flex card-footer">
-                <p>Ожидание завершения лота</p>
+                <p>{props.item.status.status}</p>
                 <p>
-                    <span>Срок лота:</span><span>24ч (прошло 22ч 40м)</span>
-                    <span>Время до завершения:</span><span>1ч 20м</span>
+                    <span>{props.item.status.option[0]}</span>: <span>{props.item.status.option[1]}</span>
+                    <span>Время до завершения:</span><span>{props.item.status.left}</span>
                 </p>
             </div>
         </div>

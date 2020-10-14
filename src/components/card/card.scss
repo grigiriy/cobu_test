@@ -1,23 +1,29 @@
 .card {
-  display: flex;
   border-bottom: solid 1px #efefef;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   .col-left {
     width: 20%;
-    img {
-      max-width: 100%;
+    .image-wrapper {
+      position: relative;
+      img {
+        max-width: 100%;
+      }
     }
   }
   .col-right {
     width: 80%;
-  }
-  .content-wrapper {
-    > div {
-      display: flex;
-      &.card-header {
-        justify-content: space-between;
+    .content-wrapper {
+      > div {
+        display: flex;
+        &.card-header {
+          justify-content: space-between;
+          margin-bottom: 2rem;
+          h2 {
+            margin: 0;
+          }
+        }
       }
     }
   }

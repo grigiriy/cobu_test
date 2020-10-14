@@ -13,13 +13,11 @@ const Catalog = () => {
         <div className="row">
             <Headline />
         </div>
-        <div className="row">
         {
-            Data.map((item) => (
-                <Card key={item.order_id} item={item} />
-                ))
-            }
-        </div>
+        Data.map((item) => (
+            <Card key={item.order_id} item={item} />
+            ))
+        }
     </div>
     )
 }

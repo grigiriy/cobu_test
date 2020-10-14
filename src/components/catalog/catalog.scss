@@ -2,6 +2,7 @@
   max-width: 900px;
   margin: 0 auto;
   .row {
+    display: flex;
     margin: 0 -1rem;
     > div {
       padding: 0 1rem;

@@ -34,18 +34,24 @@
         }
       }
       .card-main {
-        color: rgb(150, 200, 200);
-        font-size: 0.8rem;
-        p {
-          width: 100%;
-          margin-bottom: 0.2rem;
-        }
-        .atts {
-          display: flex;
-          span {
-            font-weight: 500;
-            margin-right: 1rem;
+        .content {
+          margin-bottom: 1rem;
+          color: rgb(150, 200, 200);
+          font-size: 0.8rem;
+          p {
+            width: 100%;
+            margin-bottom: 0.2rem;
           }
+          .atts {
+            display: flex;
+            span {
+              font-weight: 500;
+              margin-right: 1rem;
+            }
+          }
+        }
+        .price-wrapper {
+          display: flex;
         }
       }
     }

@@ -17,7 +17,7 @@ const Card = (props) => {
             <div className="col-left">
                 <div className="image-wrapper">
                     <Wish />
-                    <img src={require(`../../data/images/${props.item.image}`)} alt={props.item.name}/>
+                    <img src={require(`../../data/images/${props.item.image}`)} alt={props.item.name} />
                 </div>
             </div>
             <div className="col-right">
@@ -31,10 +31,12 @@ const Card = (props) => {
                         <div className="order-id">№ заказа: {props.item.order_id}</div>
                     </div>
                     <div className="card-main">
-                        <p>{props.item.about}</p>
-                        <div className="atts">
-                            <div>Цвет: <span>{props.item.color}</span></div>
-                            <div>Размер: <span>{props.item.size}</span></div>
+                        <div className="content">
+                            <p>{props.item.about}</p>
+                            <div className="atts">
+                                <div>Цвет: <span>{props.item.color}</span></div>
+                                <div>Размер: <span>{props.item.size}</span></div>
+                            </div>
                         </div>
                         <div className="price-wrapper">
                             <Price count={props.item.count} val={props.item.price} />
